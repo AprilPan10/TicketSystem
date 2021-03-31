@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<users>
+<user userId="0001" userType="client" title="Sir">
+        <userName>AprilPan10</userName>
+        <password>014c5de68701806ce2150763125a22b2</password>
+        <!--        password:0410 use MD5-->
+        <name>
+            <first>April</first>
+            <last>Pan</last>
+        </name>
+        <email><![CDATA[panshimengmeng@gmail.com]]></email>
+        <contactNumber>
+            <phone>6478369420</phone>
+        </contactNumber>
+        <address>
+            <street>57 St Joseph street</street>
+            <city>Toronto</city>
+            <province>ON</province>
+            <postcode>M5S0C5</postcode>
+        </address>
+        <description>Hello, This is my personal account.</description>
+        <image>shimengpan.png</image>
+    </user>
+    <user userId="0002" userType="admin" title="Sir">
+        <userName>Pan</userName>
+        <password>202cb962ac59075b964b07152d234b70</password>
+        <!--         password:123 use MD5-->
+        <name>
+            <first>Jonh</first>
+            <last>White</last>
+        </name>
+        <email><![CDATA[JonhWhite@company.com]]></email>
+        <contactNumber>
+            <phone>6478369410</phone>
+        </contactNumber>
+       <description>I am s senior agent who working for more than 20 years. Help clients solve general problems.</description>
+        <image>johnwhite.png</image>
+    </user>
+</users>
+    
