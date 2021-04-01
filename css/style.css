@@ -158,7 +158,7 @@ td {
     width: 60%;
 }
 .users p{
-    border: #dee2ff 1px solid;
+    border-bottom: #dee2ff 2px solid;
     padding: 0.5em;
 }
 .message{
@@ -177,6 +177,13 @@ td {
     font-size: 0.8em;
     margin-top: 1em;
 
+}
+.ticketnum{
+    font-size: 1.2em;
+    text-transform: capitalize;
+    color: #731AAE;
+    display: block;
+    margin: 0 auto;
 }
 /*Footer*/
 .copyright{

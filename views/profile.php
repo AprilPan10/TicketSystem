@@ -43,6 +43,9 @@ if($userType == "admin"){
     }
 
 }
+if($id=null||$_SESSION['userType']==null){
+    header('location:../views/userHome.php');
+}
 ?>
     <div class="container-table">
         <?php echo '<p class="welcome">Welcome Back ' . $_SESSION['username']. ' !</p>'; ?>

@@ -40,6 +40,9 @@ if($subject !== "") {
     $comments_error = "please put some comments";
     }
 }
+if($id=null||$_SESSION['userType']==null){
+    header('location:../views/userHome.php');
+}
 
 ?>
 <div class="container">

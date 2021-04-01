@@ -64,7 +64,7 @@ $xml = simplexml_load_file("../xml/tickets.xml");
 $res = $xml->xpath("//ticket[@ticketId =$params]");
 foreach ($res as $t){
     $rows .= '<tr>';
-    $rows .= '<td>'.'Ticket ID: '.$t->attributes()['ticketId'].'</td>'.'<br>';
+    $rows .= '<p class="ticketnum">'.'Ticket ID: '.$t->attributes()['ticketId'].'</p>'.'<br>';
     $rows .= '<td>'.'Messages: '.'<br>'.$t->subject.'</td>'.'<br>';
     $rows .= '<td>'.'Catalog: '.$t->catalog.'</td>'.'<br>';
     $rows .= '<td>'.'Date Opened: '.'<br>'.$t->dateOpen.'</td>'.'<br>';
@@ -86,7 +86,9 @@ foreach ($res as $t){
         }
     }
 }
-
+if($id=null||$_SESSION['userType']==null){
+    header('location:../views/userHome.php');
+}
 ?>
 <div class="container-table">
     <?php echo '<p class="welcome">Welcome Back ' . $_SESSION['username']. ' !</p>'; ?>

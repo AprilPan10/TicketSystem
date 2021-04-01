@@ -6,6 +6,7 @@ $id = $_SESSION['userId'];
 ?>
 <?php
 //display admin tickets
+
 $rows='';
 $xml = simplexml_load_file("../xml/users.xml");
 $userType = $_SESSION['userType'];
@@ -38,6 +39,9 @@ if($userType == "admin"){
 
     }
 
+}
+if($id=null||$_SESSION['userType']==null){
+    header('location:../views/userHome.php');
 }
 ?>
 <div class="container-table">
