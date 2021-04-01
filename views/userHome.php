@@ -24,7 +24,6 @@ if(isset($_POST['submit'])){
     $error = true;
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

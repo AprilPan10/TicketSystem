@@ -151,6 +151,16 @@ td {
     flex: 1 0 0;
     margin-left: 3em;
 }
+.users{
+    display: block;
+    margin: 1em auto;
+    border: #731AAE 1px solid;
+    width: 60%;
+}
+.users p{
+    border: #dee2ff 1px solid;
+    padding: 0.5em;
+}
 .message{
     flex: 1 0 0;
     margin-right: 3em;

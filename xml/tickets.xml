@@ -236,4 +236,62 @@
     <dateClose>2021-03-30 09:34:16pm</dateClose>
     <status>Close</status>
   </ticket>
+  <ticket ticketId="19" userId="0002">
+    <status>Open</status>
+    <subject>test</subject>
+    <catalog>Others</catalog>
+    <dateOpen>2021-03-30 09:45:51pm</dateOpen>
+    <messages>
+      <message userId="0002">
+        <messageText>hi</messageText>
+        <date>2021-03-30 09:46:00pm</date>
+      </message>
+    </messages>
+  </ticket>
+  <ticket ticketId="20" userId="0001">
+    <subject>hie</subject>
+    <catalog>Return</catalog>
+    <dateOpen>2021-03-30 09:46:19pm</dateOpen>
+    <messages>
+      <message userId="0001">
+        <messageText>test</messageText>
+        <date>2021-03-30 09:46:26pm</date>
+      </message>
+      <message userId="0002">
+        <messageText>I need help with shiping</messageText>
+        <date>2021-03-30 09:46:45pm</date>
+      </message>
+    </messages>
+    <dateClose>2021-03-30 09:46:47pm</dateClose>
+    <status>Close</status>
+  </ticket>
+  <ticket ticketId="21" userId="0002">
+    <status>Open</status>
+    <subject>test</subject>
+    <catalog>Return</catalog>
+    <dateOpen>2021-03-31 11:51:23pm</dateOpen>
+    <messages>
+      <message userId="0002">
+        <messageText>hi</messageText>
+        <date>2021-03-31 11:51:50pm</date>
+      </message>
+    </messages>
+  </ticket>
+  <ticket ticketId="22" userId="0001">
+    <subject>test</subject>
+    <catalog>Others</catalog>
+    <dateOpen>2021-03-31 11:52:24pm</dateOpen>
+    <messages>
+      <message userId="0001">
+        <messageText>I need help with shiping</messageText>
+        <date>2021-03-31 11:52:32pm</date>
+      </message>
+      <message userId="0002">
+        <messageText>ok</messageText>
+        <date>2021-03-31 11:52:51pm</date>
+      </message>
+    </messages>
+    <dateClose>2021-03-31 11:52:58pm</dateClose>
+    <status>Close</status>
+  </ticket>
 </tickets>

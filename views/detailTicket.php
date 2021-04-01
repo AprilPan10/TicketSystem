@@ -65,7 +65,7 @@ $res = $xml->xpath("//ticket[@ticketId =$params]");
 foreach ($res as $t){
     $rows .= '<tr>';
     $rows .= '<td>'.'Ticket ID: '.$t->attributes()['ticketId'].'</td>'.'<br>';
-    $rows .= '<td>'.'Subject: '.'<br>'.$t->subject.'</td>'.'<br>';
+    $rows .= '<td>'.'Messages: '.'<br>'.$t->subject.'</td>'.'<br>';
     $rows .= '<td>'.'Catalog: '.$t->catalog.'</td>'.'<br>';
     $rows .= '<td>'.'Date Opened: '.'<br>'.$t->dateOpen.'</td>'.'<br>';
     $rows .= '<td>'.'Date Closed: '.'<br>'.$t->dateClose.'</td>'.'<br>';

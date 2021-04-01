@@ -21,6 +21,7 @@
         <h3 class="hidden">Main navigation</h3>
         <button class="menu-toggle" onclick="toggleMenu()">MENU</button>
         <ul class="menu">
+            <li><a href="profile.php">Profile</a></li>
             <li><a href="submitTicket.php">Create ticket</a></li>
             <li><a href="listTicket.php">Your tickets</a></li>
             <li><a href="logout.php">Log Out</a></li>
