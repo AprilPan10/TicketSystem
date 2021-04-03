@@ -21,6 +21,10 @@
         <messageText>test</messageText>
         <date>2021-04-02 02:05:56pm</date>
       </message>
+      <message userId="0001">
+        <messageText>hi</messageText>
+        <date>2021-04-03 01:15:22pm</date>
+      </message>
     </messages>
     <dateClose>2021-03-29 09:17:00pm</dateClose>
     <status>Close</status>
@@ -426,6 +430,30 @@
     <subject>test</subject>
     <catalog>Shipping</catalog>
     <dateOpen>2021-04-03 01:06:31pm</dateOpen>
+    <messages/>
+  </ticket>
+  <ticket ticketId="34" userId="0001">
+    <subject>test</subject>
+    <catalog>General</catalog>
+    <dateOpen>2021-04-03 01:23:49pm</dateOpen>
+    <messages>
+      <message userId="0001">
+        <messageText>test</messageText>
+        <date>2021-04-03 01:23:58pm</date>
+      </message>
+      <message userId="0002">
+        <messageText>test</messageText>
+        <date>2021-04-03 01:24:29pm</date>
+      </message>
+    </messages>
+    <dateClose>2021-04-03 01:24:45pm</dateClose>
+    <status>Close</status>
+  </ticket>
+  <ticket ticketId="35" userId="0002">
+    <status>Open</status>
+    <subject>test</subject>
+    <catalog>Return</catalog>
+    <dateOpen>2021-04-03 01:24:38pm</dateOpen>
     <messages/>
   </ticket>
 </tickets>

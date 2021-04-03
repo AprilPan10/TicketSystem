@@ -60,7 +60,7 @@ if($id=null||$_SESSION['userType']==null){
             </div>
         </div>
         <div>
-            <label for="subject" class="labeltitle">Message:</label>
+            <label for="subject" class="labeltitle">Subject:</label>
             <textarea name="subject" class="textbox" id="subject"></textarea>
         </div>
         <span class="welcome"><?= isset($comments_error)? htmlspecialchars($comments_error): ''; ?></span>
