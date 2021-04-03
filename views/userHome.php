@@ -43,6 +43,7 @@ if(isset($_POST['submit'])){
     </div>
     <nav id="main-navigation">
         <h3 class="hidden">Main navigation</h3>
+        <button class="menu-toggle" onclick="toggleMenu()">MENU</button>
         <ul class="menu">
             <li><a href="userHome.php">Login</a></li>
         </ul>
@@ -67,7 +68,6 @@ if(isset($_POST['submit'])){
         </div>
     </form>
 </div>
-<script src="../js/script.js"></script>
 <?php
 require_once '../views/footer.php';
 ?>

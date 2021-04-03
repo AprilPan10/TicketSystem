@@ -1,7 +1,6 @@
 <?php
 require_once "../views/header.php";
 session_start();
-$xml = simplexml_load_file("../xml/users.xml");
 $id = $_SESSION['userId'];
 date_default_timezone_set("America/New_York");
 $time = date("Y-m-d h:i:sa");
@@ -70,7 +69,6 @@ if($id=null||$_SESSION['userType']==null){
         </div>
     </form>
 </div>
-<script src="../js/script.js"></script>
 <?php
 require_once '../views/footer.php';
 ?>

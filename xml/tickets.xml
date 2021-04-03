@@ -5,17 +5,21 @@
     <catalog>General</catalog>
     <dateOpen>2021-02-06 23:56:07pm</dateOpen>
     <messages>
-      <message userId="0001" userType="client">
+      <message userId="0001">
         <date>2021-02-06 23:56:07</date>
         <messageText>Hello!</messageText>
       </message>
-      <message userId="0002" userType="admin">
+      <message userId="0002">
         <date>2021-02-04 08:56:07</date>
         <messageText>I am happy to help!</messageText>
       </message>
       <message userId="0001">
         <messageText>hi</messageText>
         <date>2021-03-29 09:24:30pm</date>
+      </message>
+      <message userId="0001">
+        <messageText>test</messageText>
+        <date>2021-04-02 02:05:56pm</date>
       </message>
     </messages>
     <dateClose>2021-03-29 09:17:00pm</dateClose>
@@ -308,17 +312,120 @@
     <status>Close</status>
   </ticket>
   <ticket ticketId="24" userId="0002">
-    <status>Open</status>
     <subject>he</subject>
     <catalog>Return</catalog>
     <dateOpen>2021-04-01 01:56:44pm</dateOpen>
     <messages/>
+    <dateClose>2021-04-02 01:20:47pm</dateClose>
+    <status>close</status>
   </ticket>
   <ticket ticketId="25" userId="0002">
-    <status>Open</status>
     <subject>qwe</subject>
     <catalog>Return</catalog>
     <dateOpen>2021-04-01 02:14:30pm</dateOpen>
+    <messages/>
+    <dateClose>2021-04-02 01:22:15pm</dateClose>
+    <status>Close</status>
+  </ticket>
+  <ticket ticketId="26" userId="0001">
+    <subject>test</subject>
+    <catalog>General</catalog>
+    <dateOpen>2021-04-02 01:47:15pm</dateOpen>
+    <messages>
+      <message userId="0001">
+        <messageText>test</messageText>
+        <date>2021-04-02 01:47:25pm</date>
+      </message>
+      <message userId="0002">
+        <messageText>test</messageText>
+        <date>2021-04-02 01:48:39pm</date>
+      </message>
+    </messages>
+    <dateClose>2021-04-02 01:48:43pm</dateClose>
+    <status>Close</status>
+  </ticket>
+  <ticket ticketId="27" userId="0002">
+    <status>Open</status>
+    <subject>hi</subject>
+    <catalog>Return</catalog>
+    <dateOpen>2021-04-02 01:48:26pm</dateOpen>
+    <messages/>
+  </ticket>
+  <ticket ticketId="28" userId="0001">
+    <subject>test</subject>
+    <catalog>Others</catalog>
+    <dateOpen>2021-04-02 02:06:13pm</dateOpen>
+    <messages>
+      <message userId="0001">
+        <messageText>test</messageText>
+        <date>2021-04-02 02:06:47pm</date>
+      </message>
+      <message userId="0002">
+        <messageText>ok</messageText>
+        <date>2021-04-02 02:07:05pm</date>
+      </message>
+    </messages>
+    <dateClose>2021-04-02 02:07:07pm</dateClose>
+    <status>Close</status>
+  </ticket>
+  <ticket ticketId="29" userId="0002">
+    <status>Open</status>
+    <subject>trw</subject>
+    <catalog>Return</catalog>
+    <dateOpen>2021-04-02 02:07:14pm</dateOpen>
+    <messages>
+      <message userId="0002">
+        <messageText>test</messageText>
+        <date>2021-04-02 02:07:21pm</date>
+      </message>
+    </messages>
+  </ticket>
+  <ticket ticketId="30" userId="0001">
+    <subject>test</subject>
+    <catalog>General</catalog>
+    <dateOpen>2021-04-02 11:20:21pm</dateOpen>
+    <messages>
+      <message userId="0001">
+        <messageText>test</messageText>
+        <date>2021-04-02 11:20:40pm</date>
+      </message>
+      <message userId="0002">
+        <messageText>hi</messageText>
+        <date>2021-04-02 11:21:44pm</date>
+      </message>
+    </messages>
+    <dateClose>2021-04-02 11:21:47pm</dateClose>
+    <status>Close</status>
+  </ticket>
+  <ticket ticketId="31" userId="0002">
+    <status>Open</status>
+    <subject>test</subject>
+    <catalog>Others</catalog>
+    <dateOpen>2021-04-02 11:21:29pm</dateOpen>
+    <messages/>
+  </ticket>
+  <ticket ticketId="32" userId="0001">
+    <subject>test</subject>
+    <catalog>Return</catalog>
+    <dateOpen>2021-04-03 01:04:54pm</dateOpen>
+    <messages>
+      <message userId="0001">
+        <messageText>test</messageText>
+        <date>2021-04-03 01:05:05pm</date>
+      </message>
+      <message userId="0002">
+        <messageText>hi</messageText>
+        <date>2021-04-03 01:06:51pm</date>
+      </message>
+    </messages>
+    <dateClose>2021-04-03 01:06:54pm</dateClose>
+    <status>Close</status>
+  </ticket>
+  <ticket ticketId="33" userId="0002">
+    <status>Open</status>
+    <subject>test</subject>
+    <catalog>Shipping</catalog>
+    <dateOpen>2021-04-03 01:06:31pm</dateOpen>
     <messages/>
   </ticket>
 </tickets>

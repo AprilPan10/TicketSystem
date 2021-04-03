@@ -1,6 +1,5 @@
 <?php
 session_start();
-$xml = simplexml_load_file("../xml/tickets.xml");
 $userId=$_SESSION['userId'];
 $userType = $_SESSION['userType'];
 //add messages
@@ -31,10 +30,8 @@ if(isset($_POST['submit'])){
 }
 if(isset($_POST['change'])) {
     $select = $_POST['status'];
-    //if ($select == "close") {
     date_default_timezone_set("America/New_York");
     $timeClose = date("Y-m-d h:i:sa");
-    //$_SESSION['status'] = 'Close';
     $xml = new DOMDocument();
     $xml->preserveWhiteSpace = false;
     $xml->formatOutput = true;
@@ -42,7 +39,7 @@ if(isset($_POST['change'])) {
     $ticket = $xml->getElementsByTagName('ticket')->item($params-1);
     $remove = $xml->getElementsByTagName("status")->item($params-1);
     $remove->parentNode->removeChild($remove);
-    $new = $xml->createElement("status","Close");
+    $new = $xml->createElement("status",$select);
     if($xml->getElementsByTagName("dateClose")->item($params-1) !== null){
         $removeStatus = $xml->getElementsByTagName("dateClose")->item($params-1);
         $removeStatus->parentNode->removeChild($removeStatus);
@@ -50,9 +47,7 @@ if(isset($_POST['change'])) {
     $timeClose = $xml->createElement("dateClose", $timeClose);
     $ticket->appendChild($timeClose);
     $ticket->appendChild($new);
-    //$xml->documentElement->appendChild($ticket);
     $xml->save("../xml/tickets.xml");
-    //}
 }
 ?>
 <?php
@@ -71,8 +66,7 @@ foreach ($res as $t){
     $rows .= '<td>'.'Date Closed: '.'<br>'.$t->dateClose.'</td>'.'<br>';
     if($userType == "admin"){
     $select = "";
-    $rows .= '<td>' .'<form action="" method="post"><select name="status"><option value="close" <?= ($select == "close") ? "selected" : ""; ?>Close</option></select><button type="submit" name="change" class="button-status">Save</button> </form>'.'</td>';
-
+    $rows .= '<td>' .'<form action="" method="post"><select name="status"><option value="Close" <?= ($select == "close") ? "selected" : ""; ?>Close</option></select><button type="submit" name="change" class="button-status">Save</button> </form>'.'</td>';
 }
     $rows .= '</tr>';
 
@@ -86,7 +80,7 @@ foreach ($res as $t){
         }
     }
 }
-if($id=null||$_SESSION['userType']==null){
+if($id=null||$userType==null){
     header('location:../views/userHome.php');
 }
 ?>
@@ -111,7 +105,6 @@ if($id=null||$_SESSION['userType']==null){
         </div>
     </div>
 </div>
-<script src="../js/script.js"></script>
 <?php
 require_once '../views/footer.php';
 ?>

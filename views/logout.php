@@ -4,14 +4,11 @@ unset($_SESSION['username']);
 unset($_SESSION['password']);
 unset($_SESSION['userId']);
 unset($_SESSION['userType']);
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Login</title>
+    <title>Log out</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -27,6 +24,7 @@ unset($_SESSION['userType']);
     </div>
     <nav id="main-navigation">
         <h3 class="hidden">Main navigation</h3>
+        <button class="menu-toggle" onclick="toggleMenu()">MENU</button>
         <ul class="menu">
             <li><a href="userHome.php">Login</a></li>
         </ul>
