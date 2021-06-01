@@ -8,7 +8,7 @@
 - [X] The admin can help users create their ticket by using the original user ID.
 - [X] Use Ajax to show when a new message is received.
   
-- [X] Here is the live side https://shimengpan.website/Ticketsystem/views/userHome.php
+- [X] Here is the live site https://shimengpan.website/Ticketsystem/views/userHome.php
 <img src="images/v1.jpg" />
 <img src="images/v2.jpg" />
 <img src="images/v3.jpg" />
